@@ -1,5 +1,3 @@
-[![npm version](https://badge.fury.io/js/@priotas/angular-file-upload.svg)](http://badge.fury.io/js/@priotas/angular-file-upload.svg)
-
 @priotas/angular-file-upload
 ===================
 
