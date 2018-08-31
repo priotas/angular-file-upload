@@ -1,27 +1,13 @@
-[![npm version](https://badge.fury.io/js/ng-file-upload.svg)](http://badge.fury.io/js/ng-file-upload)
-[![Downloads](http://img.shields.io/npm/dm/ng-file-upload.svg)](https://npmjs.org/package/ng-file-upload)
-[![Issue Stats](http://issuestats.com/github/danialfarid/ng-file-upload/badge/pr)](http://issuestats.com/github/danialfarid/ng-file-upload)
-[![Issue Stats](http://issuestats.com/github/danialfarid/ng-file-upload/badge/issue)](http://issuestats.com/github/danialfarid/ng-file-upload)<br/>
-[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=danial%2efarid%40gmail%2ecom&lc=CA&item_name=ng%2dfile%2dupload&item_number=ng%2dfile%2dupload&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
-[![Gratipay donate button](https://img.shields.io/gratipay/danialfarid.svg?label=donate)](https://gratipay.com/ng-file-upload/)
+[![npm version](https://badge.fury.io/js/@priotas/angular-file-upload.svg)](http://badge.fury.io/js/@priotas/angular-file-upload.svg)
 
-ng-file-upload
+@priotas/angular-file-upload
 ===================
 
 Lightweight Angular directive to upload files.
 
 **See the <a href="https://angular-file-upload.appspot.com/" target="_blank">DEMO</a> page.** Reference docs [here](https://github.com/danialfarid/ng-file-upload/blob/master/README.md#full-reference)
 
-**Migration notes**: [version 3.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/3.0.0) [version 3.1.x](https://github.com/danialfarid/ng-file-upload/releases/tag/3.1.0) [version 3.2.x](https://github.com/danialfarid/ng-file-upload/releases/tag/3.2.3) [version 4.x.x](https://github.com/danialfarid/ng-file-upload/releases/tag/4.0.0) [version 5.x.x](https://github.com/danialfarid/ng-file-upload/releases/tag/5.0.0) [version 6.x.x](https://github.com/danialfarid/ng-file-upload/releases/tag/6.0.0) [version 6.2.x](https://github.com/danialfarid/ng-file-upload/releases/tag/6.2.0) [version 7.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/7.0.0) [version 7.2.x](https://github.com/danialfarid/ng-file-upload/releases/tag/7.2.0) [version 8.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/8.0.1) [version 9.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/9.0.0) [version 10.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/10.0.0) [version 11.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/11.0.0) [version 12.0.x](https://github.com/danialfarid/ng-file-upload/releases/tag/12.0.0) [version 12.1.x](https://github.com/danialfarid/ng-file-upload/releases/tag/12.1.0) [version 12.2.x](https://github.com/danialfarid/ng-file-upload/releases/tag/12.2.3)
-
-
-
-Ask questions on [StackOverflow](http://stackoverflow.com/) under the [ng-file-upload](http://stackoverflow.com/tags/ng-file-upload/) tag.<br/>
-For bug report or feature request please search through existing [issues](https://github.com/danialfarid/ng-file-upload/issues) first then open a new one  [here](https://github.com/danialfarid/ng-file-upload/issues/new). For faster response provide steps to reproduce/versions with a jsfiddle link. If you need support for your company contact [me](mailto:danial.farid@gmail.com).<br/>
-If you like this plugin give it a thumbs up at [ngmodules](http://ngmodules.org/modules/ng-file-upload) or get me a <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=danial%2efarid%40gmail%2ecom&lc=CA&item_name=ng%2dfile%2dupload&item_number=ng%2dfile%2dupload&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">cup of tea <img src="https://angular-file-upload.appspot.com/img/tea.png" width="40" height="24" title="Icon made by Freepik.com"></a>. Contributions are welcomed.
-
-
-Table of Content:
+Table of Contents:
 * [Features](#features)
 * [Install](#install) ([Manual](#manual), [Bower](#bower), [NuGet](#nuget), [NPM](#npm))
 * [Usage](#usage)
@@ -31,7 +17,7 @@ Table of Content:
   * [CORS](#cors)
   * [Amazon S3 Upload](#s3)
 
-##<a name="features"></a> Features
+## <a name="features"></a> Features
 * file upload progress, cancel/abort
 * file drag and drop (html5 only)
 * image paste from clipboard and drag and drop from browser pages (html5 only).
@@ -46,7 +32,7 @@ Table of Content:
 * HTML5 FileReader.readAsDataURL shim for IE8-9
 * available on [npm](https://www.npmjs.com/package/ng-file-upload), [bower](https://libraries.io/bower/ng-file-upload), [meteor](https://atmospherejs.com/danialf/ng-file-upload), [nuget](https://www.nuget.org/packages/angular-file-upload)
 
-##<a name="install"></a> Install
+## <a name="install"></a> Install
 
 * <a name="manual"></a>**Manual**: download latest from [here](https://github.com/danialfarid/ng-file-upload-bower/releases/latest)
 * <a name="bower"></a>**Bower**:
@@ -60,9 +46,9 @@ Table of Content:
 <script src="ng-file-upload(.min).js"></script>
 ```
 
-##<a name="usage"></a> Usage
+## <a name="usage"></a> Usage
 
-###Samples:
+### Samples:
 * Upload with form submit and validations: [http://jsfiddle.net/danialfarid/maqbzv15/1118/](http://jsfiddle.net/danialfarid/maqbzv15/1118/)
 * Upload multiple files one by one on file select:
 [http://jsfiddle.net/danialfarid/2vq88rfs/136/](http://jsfiddle.net/danialfarid/2vq88rfs/136/)
@@ -459,7 +445,7 @@ On your server you need to keep track of what files are being uploaded and how m
 
 
 
-##<a name="old_browsers"></a> Old browsers
+## <a name="old_browsers"></a> Old browsers
 
 For browsers not supporting HTML5 FormData (IE8, IE9, ...) [FileAPI](https://github.com/mailru/FileAPI) module is used.
 **Note**: You need Flash installed on your browser since `FileAPI` uses Flash to upload files.
