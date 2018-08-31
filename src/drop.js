@@ -66,24 +66,6 @@
     var dragOverDelay = 1;
     var actualDragOverClass;
 
-    scope.$on('$destroy', function () {
-      elem[0].removeEventListener('dragover', onDragOver, false);
-      elem[0].removeEventListener('dragenter', onDragEnter, false);
-      elem[0].removeEventListener('dragleave', onDragLeave, false);
-      elem[0].removeEventListener('drop', onDrop, false);
-      elem[0].removeEventListener('paste', onPaste, false);
-
-      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1 && attrGetter('ngfEnableFirefoxPaste', scope)) {
-        elem.off('keypress', onKeyPress);
-      }
-    });
-
-    elem[0].addEventListener('dragover', onDragOver, false);
-    elem[0].addEventListener('dragenter', onDragEnter, false);
-    elem[0].addEventListener('dragleave',onDragLeave, false);
-    elem[0].addEventListener('drop', onDrop, false);
-    elem[0].addEventListener('paste', onPaste, false);
-
     function onDragOver(evt) {
       if (isDisabled() || !upload.shouldUpdateOn('drop', attr, scope)) return;
       evt.preventDefault();
@@ -144,6 +126,24 @@
         e.preventDefault();
       }
     }
+
+    scope.$on('$destroy', function () {
+      elem[0].removeEventListener('dragover', onDragOver, false);
+      elem[0].removeEventListener('dragenter', onDragEnter, false);
+      elem[0].removeEventListener('dragleave', onDragLeave, false);
+      elem[0].removeEventListener('drop', onDrop, false);
+      elem[0].removeEventListener('paste', onPaste, false);
+
+      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1 && attrGetter('ngfEnableFirefoxPaste', scope)) {
+        elem.off('keypress', onKeyPress);
+      }
+    });
+
+    elem[0].addEventListener('dragover', onDragOver, false);
+    elem[0].addEventListener('dragenter', onDragEnter, false);
+    elem[0].addEventListener('dragleave',onDragLeave, false);
+    elem[0].addEventListener('drop', onDrop, false);
+    elem[0].addEventListener('paste', onPaste, false);
 
     if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1 &&
       attrGetter('ngfEnableFirefoxPaste', scope)) {

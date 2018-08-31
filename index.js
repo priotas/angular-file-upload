@@ -1,2 +1,2 @@
-require('./dist/ng-file-upload-all');
+require('./dist/ng-file-upload');
 module.exports = 'ngFileUpload';
